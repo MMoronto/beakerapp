@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @hairstyle.style %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @hairstyle.user_id %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @hairstyle.image_url %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @hairstyle.price %>
+</p>
+
+<p>
+  <strong>Salon adress:</strong>
+  <%= @hairstyle.salon_adress %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @hairstyle.duration %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @hairstyle.rating %>
+</p>
+
+<%= link_to 'Edit', edit_hairstyle_path(@hairstyle) %> |
+<%= link_to 'Back', hairstyles_path %>
