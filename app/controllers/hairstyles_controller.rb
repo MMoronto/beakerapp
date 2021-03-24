@@ -21,7 +21,8 @@ class HairstylesController < ApplicationController
 
   # POST /hairstyles or /hairstyles.json
   def create
-    @hairstyle = Hairstyle.new(hairstyle_params)
+    # @hairstyle = Hairstyle.new(hairstyle_params)
+    new_hairstyle = @user.hairstyle.build(hairstyle_params)
 
     respond_to do |format|
       if @hairstyle.save
