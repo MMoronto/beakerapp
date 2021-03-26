@@ -25,7 +25,8 @@ class HairstylesController < ApplicationController
     new_hairstyle = @user.hairstyle.build(hairstyle_params)
 
     respond_to do |format|
-      if @hairstyle.save
+      # if @hairstyle.save
+      if new_hairstyle.save
         format.html { redirect_to @hairstyle, notice: "Hairstyle was successfully created." }
         format.json { render :show, status: :created, location: @hairstyle }
       else
